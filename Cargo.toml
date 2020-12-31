@@ -13,7 +13,7 @@ documentation = "https://docs.rs/twapi-reqwest"
 
 [dependencies]
 base64 = "^0.13"
-reqwest = { version = "^0.10", features = ["json"] }
+reqwest = { version = "^0.10", features = ["json", "rustls-tls"], default-features = false }
 serde_json = "^1.0"
 serde_urlencoded = "^0.7"
 twapi-oauth = "^0.1"
